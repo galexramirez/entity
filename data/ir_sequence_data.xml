@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="sequence_hydrostatic_test_certificate" model="ir.sequence">
+        <field name="name">Hydrostatic Test Certificate</field>
+        <field name="code">hydrostatic.test.certificate</field>
+        <field name="active">TRUE</field>
+        <field name="prefix">CPH</field>
+        <field name="padding">10</field>
+        <field name="number_next">4739</field>
+        <field name="number_increment">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="sequence_operating_certificate" model="ir.sequence">
+        <field name="name">Operating Certificate</field>
+        <field name="code">operating.certificate</field>
+        <field name="active">TRUE</field>
+        <field name="prefix">OP</field>
+        <field name="padding">10</field>
+        <field name="number_next">18395</field>
+        <field name="number_increment">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="sequence_sanitation_certificate" model="ir.sequence">
+        <field name="name">Sanitation Certificate</field>
+        <field name="code">sanitation.certificate</field>
+        <field name="active">TRUE</field>
+        <field name="prefix">CSA</field>
+        <field name="padding">10</field>
+        <field name="number_next">1839</field>
+        <field name="number_increment">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+</odoo>

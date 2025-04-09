@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="entity_menu_root"
+        name="Entity"
+        action="entity.entity_action_entity_template"
+        sequence="1" />
+
+    <menuitem id="entity_menu_entities"
+        name="Entities"
+        parent="entity.entity_menu_root"
+        sequence="2" />
+
+    <menuitem id="entity_menu_configuration"
+        name="Configuration"
+        parent="entity.entity_menu_root"
+        sequence="3" />
+
+    <menuitem id="entities_menu_entity_template"
+        name="Entities"
+        parent="entity.entity_menu_entities"
+        action="entity.entity_action_entity_template"
+        sequence="201" />
+
+    <menuitem id="entities_menu_entities_operating_certificate"
+        name="Operating Certificate"
+        parent="entity.entity_menu_entities"
+        action="entity.entity_action_entities_operating_certificate"
+        sequence="202" />
+
+    <menuitem id="entities_menu_entities_sanitation_certificate"
+        name="Sanitation Certificate"
+        parent="entity.entity_menu_entities"
+        action="entity.entity_action_entities_sanitation_certificate"
+        sequence="203" />
+
+    <menuitem id="entities_menu_entities_customers"
+        name="Customers"
+        parent="entity.entity_menu_entities"
+        action="entity.entity_action_entities_customers"
+        sequence="204" />
+
+    <menuitem id="entities_menu_entities_technicians"
+        name="Technicians"
+        parent="entity.entity_menu_entities"
+        action="entity.entity_action_entities_technicians"
+        sequence="205" />
+
+    <menuitem id="entity_configuration_menu_entity_type"
+        name="Types"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_type"
+        sequence="301" />
+
+    <menuitem id="entity_configuration_menu_entity_type_agent"
+        name="Types Agent"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_type_agent"
+        sequence="302" />
+
+    <menuitem id="entity_configuration_menu_entity_manufacturer"
+        name="Manufacturer"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_manufacturer"
+        sequence="303" />
+    
+    <menuitem id="entity_configuration_menu_entity_model"
+        name="Model"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_model"
+        sequence="304" />
+    
+    <menuitem id="entity_configuration_menu_entity_category"
+        name="Category"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_category"
+        sequence="305" />
+
+    <menuitem id="entity_configuration_menu_entity_tag"
+        name="Tag"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_tag"
+        sequence="306" />
+    
+    <menuitem id="entity_configuration_menu_entity_origin"
+        name="Origin"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_origin"
+        sequence="307" />
+
+    <menuitem id="entity_configuration_menu_entity_cylinder_capacity"
+        name="Cylinder Capacity"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_cylinder_capacity"
+        sequence="308" />
+
+    <menuitem id="entity_configuration_menu_entity_percentage_load"
+        name="Percentage Load"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_percentage_load"
+        sequence="309" />
+
+     <menuitem id="entity_configuration_menu_entity_techincal_standard"
+        name="Technical Standard"
+        parent="entity.entity_menu_configuration"
+        action="entity.entity_action_entity_technical_standard"
+        sequence="310" />
+</odoo>

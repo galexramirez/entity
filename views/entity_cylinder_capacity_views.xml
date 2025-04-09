@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entity_cylinder_capacity"
+        model="ir.actions.act_window">
+        <field name="name">Cylinder Capacity</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.cylinder.capacity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new cylinder capacity !
+            </p>
+        </field>
+    </record>
+    
+    <record id="entity_cylinder_capacity_view_tree" model="ir.ui.view">
+        <field name="name">entity.cylinder.capacity.tree</field>
+        <field name="model">entity.cylinder.capacity</field>
+        <field name="arch" type="xml">
+            <tree string="Cylinder Capacity" multi_edit="1">
+                <field name="sequence" widget="handle" />
+                <field name="name" readonly="1" />
+                <field name="entity_cylinder_capacity_count" readonly="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_cylinder_capacity_view_form" model="ir.ui.view">
+        <field name="name">entity.cylinder.capacity.form</field>
+        <field name="model">entity.cylinder.capacity</field>
+        <field name="arch" type="xml">
+            <form string="Entity Cylinder Capacity">
+                <header>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            class="oe_inline oe_stat_button"
+                            type="action"
+                            name="%(entity_action_entity_template)d"
+                            icon="fa-cube">
+                            <field name="entity_cylinder_capacity_count" widget="statinfo" string=" Entities" />
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

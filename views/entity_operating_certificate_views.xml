@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entities_operating_certificate"
+        model="ir.actions.act_window">
+        <field name="name">Operating Certificate</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.operating.certificate</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new entity operating certificate !
+            </p>
+        </field>
+    </record>
+
+    <record id="entity_operating_certificate_view_tree" model="ir.ui.view">
+        <field name="name">entity.operating.certificate.tree</field>
+        <field name="model">entity.operating.certificate</field>
+        <field name="arch" type="xml">
+            <tree string="Operating Certificate" multi_edit="1">
+                <field name="name" readonly="1" />
+                <field name="owner_id" readonly="1" />
+                <field name="date_certificate" readonly="1" />
+                <field name="template_certificate" readonly="1" />
+                <button name="action_print_report_operating_certificate"
+                    string="Print"
+                    type="object"
+                    class="btn-primary"
+                    icon="fa-print"
+                    invisible="name == 'New'" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_operating_certificate_view_form" model="ir.ui.view">
+        <field name="name">entity.operating.certificate.form</field>
+        <field name="model">entity.operating.certificate</field>
+        <field name="arch" type="xml">
+            <form string="Entity Operating Certificate">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_previewing_report_operating_certificate"
+                            string="Previewing"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-print"
+                            invisible="name != 'New'" >
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"></field>
+                        <field name="owner_id"  widget="many2one_avatar" 
+                            domain="[('active_entity', '=', True)]" ></field>
+                        <field name="date_certificate"></field>
+                        <field name="template_certificate"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

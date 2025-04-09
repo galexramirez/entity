@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entity_type_agent"
+        model="ir.actions.act_window">
+        <field name="name">Types Agent</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.type.agent</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new type agent !
+            </p>
+        </field>
+    </record>
+    
+    <record id="entity_type_agent_view_tree" model="ir.ui.view">
+        <field name="name">entity.type.agent.tree</field>
+        <field name="model">entity.type.agent</field>
+        <field name="arch" type="xml">
+            <tree string="Entity Type Agent" multi_edit="1">
+                <field name="sequence" widget="handle" />
+                <field name="name" readonly="1" />
+                <field name="hydrostatic_test_description" />
+                <field name="entity_type_agent_count" readonly="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_type_agent_view_form" model="ir.ui.view">
+        <field name="name">entity.type.agent.form</field>
+        <field name="model">entity.type.agent</field>
+        <field name="arch" type="xml">
+            <form string="Entity Type Agent">
+                <header>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            class="oe_inline oe_stat_button"
+                            type="action"
+                            name="%(entity_action_entity_template)d"
+                            icon="fa-cube">
+                            <field name="entity_type_agent_count" widget="statinfo" string=" Entities" />
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"></field>
+                        <field name="hydrostatic_test_description"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    
+
+</odoo>

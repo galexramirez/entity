@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_mi_modelo_pdf">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <!-- Cabecera personalizada -->
+                <div class="header" style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+                    <img t-att-src="'/mi_modulo/static/src/img/logo.png'" style="width: 150px; height: auto;"/>
+                    <h1 style="color: #007bff;">Informe Personalizado</h1>
+                </div>
+
+                <!-- Cuerpo del informe -->
+                <div class="body" style="margin: 20px;">
+                    <!-- Tabla de 5 columnas -->
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background-color: #007bff; color: white;">
+                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 1</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 2</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 3</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 4</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="docs" t-as="doc">
+                                <td style="padding: 10px; border: 1px solid #ddd;">
+                                    <span t-field="doc.campo1"/>
+                                </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">
+                                    <span t-field="doc.campo2"/>
+                                </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">
+                                    <span t-field="doc.campo3"/>
+                                </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">
+                                    <span t-field="doc.campo4"/>
+                                </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">
+                                    <span t-field="doc.campo5"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Observación -->
+                    <div style="margin-top: 20px;">
+                        <h3>Observación:</h3>
+                        <p t-field="doc.observacion"/>
+                    </div>
+
+                    <!-- Firma -->
+                    <div style="margin-top: 20px; text-align: right;">
+                        <h3>Firma:</h3>
+                        <img t-att-src="'data:image/png;base64,' + doc.firma" style="width: 150px; height: auto;"/>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_print_report_hydrostatic_test" model="ir.actions.report">
+    <field name="name">Report Hydrostatic Test</field>
+    <field name="model">entity.hydrostatic.test.line</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">entity_hydrostatic_test_line.report_hydrostatic_test_pdf</field>
+    <field name="binding_model_id" ref="mi_modulo.model_mi_modulo_mi_modelo"/>
+    <field name="binding_type">report</field>
+</record>
+</odoo>

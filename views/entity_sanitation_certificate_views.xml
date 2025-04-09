@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entities_sanitation_certificate"
+        model="ir.actions.act_window">
+        <field name="name">sanitation Certificate</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.sanitation.certificate</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new entity sanitation certificate !
+            </p>
+        </field>
+    </record>
+
+    <record id="entity_sanitation_certificate_view_tree" model="ir.ui.view">
+        <field name="name">entity.sanitation.certificate.tree</field>
+        <field name="model">entity.sanitation.certificate</field>
+        <field name="arch" type="xml">
+            <tree string="Sanitation Certificate" multi_edit="1">
+                <field name="name" readonly="1" />
+                <field name="owner_id" readonly="1" />
+                <field name="disinfection" readonly="1" />
+                <field name="rat_extermination" readonly="1" />
+                <field name="septic_tank_cleaning" readonly="1" />
+                <field name="insect_control" readonly="1" />
+                <field name="water_reservoir_cleaning_desinfection" readonly="1" />
+                <field name="owner_id" readonly="1" />
+                <field name="service_start_date" readonly="1" />
+                <field name="expiration_date" readonly="1" />
+                <field name="business_activity" readonly="1" />
+                <field name="treated_area" readonly="1" />
+                <button name="action_print_report_sanitation_certificate"
+                    string="Print"
+                    type="object"
+                    class="btn-primary"
+                    icon="fa-print"
+                    invisible="name == 'New'" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_sanitation_certificate_view_form" model="ir.ui.view">
+        <field name="name">entity.sanitation.certificate.form</field>
+        <field name="model">entity.sanitation.certificate</field>
+        <field name="arch" type="xml">
+            <form string="Entity Sanitation Certificate">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_previewing_report_sanitation_certificate"
+                            string="Previewing"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-print"
+                            invisible="name != 'New'">
+                        </button>
+                    </div>
+                    <field name="name"></field>
+                    <group name="sanitation_certificate" string="Sanitation Certificate">
+                        <group>
+                            <field name="disinfection"></field>
+                            <field name="rat_extermination"></field>
+                            <field name="septic_tank_cleaning"></field>
+                            <field name="insect_control"></field>
+                            <field name="water_reservoir_cleaning_desinfection"></field>
+                        </group>
+                        <group>
+                            <field name="owner_id" widget="many2one_avatar"
+                                domain="[('active_entity', '=', True)]"></field>
+                            <field name="service_start_date"></field>
+                            <field name="expiration_date"></field>
+                            <field name="business_activity"></field>
+                            <field name="treated_area"></field>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

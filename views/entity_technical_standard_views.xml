@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entity_technical_standard"
+        model="ir.actions.act_window">
+        <field name="name">Technical Standard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.technical.standard</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new technical standard !
+            </p>
+        </field>
+    </record>
+    
+    <record id="entity_technical_standard_view_tree" model="ir.ui.view">
+        <field name="name">entity.technical.standard.tree</field>
+        <field name="model">entity.technical.standard</field>
+        <field name="arch" type="xml">
+            <tree string="Technical Standard" multi_edit="1">
+                <field name="id" widget="handle" />
+                <field name="type_certificate" readonly="1" />
+                <field name="template_certificate" readonly="1" />
+                <field name="start_date" readonly="1" />
+                <field name="end_date" readonly="1" />
+                <field name="technical_standard" readonly="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_technical_standard_view_form" model="ir.ui.view">
+        <field name="name">entity.technical.standard.form</field>
+        <field name="model">entity.technical.standard</field>
+        <field name="arch" type="xml">
+            <form string="Entity Technical Standard">
+                <sheet>
+                    <group>
+                        <field name="type_certificate"></field>
+                        <field name="template_certificate"></field>
+                        <field name="start_date"></field>
+                        <field name="end_date"></field>
+                        <field name="technical_standard"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

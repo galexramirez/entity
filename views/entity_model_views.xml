@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="entity_action_entity_model"
+        model="ir.actions.act_window">
+        <field name="name">Model</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">entity.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new model !
+            </p>
+        </field>
+    </record>
+
+    <record id="entity_model_view_tree" model="ir.ui.view">
+        <field name="name">entity.model.tree</field>
+        <field name="model">entity.model</field>
+        <field name="arch" type="xml">
+            <tree string="Model" multi_edit="1">
+                <field name="name" readonly="1" />
+                <field name="entity_manufacturer_id" readonly="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="entity_model_view_form" model="ir.ui.view">
+        <field name="name">entity.model.form</field>
+        <field name="model">entity.model</field>
+        <field name="arch" type="xml">
+            <form string="Entity Model">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"></field>
+                        <field name="entity_manufacturer_id"></field>
+                        <field name="note" widget="html" class="oe_inline" string="Note"
+                            placeholder="Write here any other information related to this entity model" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

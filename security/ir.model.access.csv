@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_entity,access.entity,model_entity,base.group_user,1,1,1,1
+access_entity_type,access.entity.type,model_entity_type,base.group_user,1,1,1,1
+access_entity_model,access.entity.model,model_entity_model,base.group_user,1,1,1,1
+access_entity_manufacturer,access.entity.manufacturer,model_entity_manufacturer,base.group_user,1,1,1,1
+access_entity_category,access.entity.category,model_entity_category,base.group_user,1,1,1,1
+access_entity_tag,access.entity.tag,model_entity_tag,base.group_user,1,1,1,1
+access_entity_type_agent,access_entity_type_agent,model_entity_type_agent,base.group_user,1,1,1,1
+access_entity_origin,access_entity_origin,model_entity_origin,base.group_user,1,1,1,1
+access_entity_operating_line,access_entity_operating_line,model_entity_operating_line,base.group_user,1,1,1,1
+access_entity_hydrostatic_test_line,access_entity_hydrostatic_test_line,model_entity_hydrostatic_test_line,base.group_user,1,1,1,1
+access_entity_cylinder_capacity,access_entity_cylinder_capacity,model_entity_cylinder_capacity,base.group_user,1,1,1,1
+access_entity_percentage_load,access_entity_percentage_load,model_entity_percentage_load,base.group_user,1,1,1,1
+access_entity_technical_standard,access_entity_technical_standard,model_entity_technical_standard,base.group_user,1,1,1,1
+access_entity_operating_certificate,access_entity_operating_certificate,model_entity_operating_certificate,base.group_user,1,1,1,1
+access_entity_sanitation_certificate,access_entity_sanitation_certificate,model_entity_sanitation_certificate,base.group_user,1,1,1,1
