@@ -35,7 +35,7 @@ class Partner(models.Model):
         ondelete='restrict', string='Owner Entities')
 
     technician_entity_ids = fields.One2many(
-        'entity', 'last_technician_id',
+        'entity.operating.line', 'technician_id',
         ondelete='restrict', string='Technician Entities')
 
     def _valid_field_parameter(self, field, name):

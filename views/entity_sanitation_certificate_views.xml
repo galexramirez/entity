@@ -26,7 +26,6 @@
                 <field name="septic_tank_cleaning" readonly="1" />
                 <field name="insect_control" readonly="1" />
                 <field name="water_reservoir_cleaning_desinfection" readonly="1" />
-                <field name="owner_id" readonly="1" />
                 <field name="service_start_date" readonly="1" />
                 <field name="expiration_date" readonly="1" />
                 <field name="business_activity" readonly="1" />

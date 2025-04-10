@@ -12,11 +12,11 @@ class EntityOperatingLine(models.Model):
     _description = "Entity Operating Line"
     _order = 'date_loading desc'
 
-    name = fields.Char(string='Name', readonly=True)
+    name = fields.Char(string='Name', readonly=True, default='New')
     id_loading = fields.Integer(string="ID.")
     entity_id = fields.Many2one('entity', string='Entity', required=True)
     owner_id = fields.Many2one("res.partner", string="Owner", required=True)
-    location = fields.Char(string='Location', required=True)
+    location = fields.Char(string='Location')
     date_loading = fields.Date(string='Date Loading', required=True, default=fields.Date.today)
     date_reloading = fields.Date(string='Date Reloading', required=True, default=datetime.today() + relativedelta(years=1))
     cylinder_number = fields.Char(string='Cylinder Number')

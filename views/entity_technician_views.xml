@@ -28,12 +28,13 @@
                     <field name="technician_entity_ids" nolabel="1">
                         <tree editable="bottom" create="false" delete="false" clickable="0">
                             <field name="name"/>
-                            <field name="last_name_operating"/>
-                            <field name="next_reload_date"/>
-                            <field name="last_owner_id"/>
-                            <field name="last_name_hydrostatic_test"/>
-                            <field name="last_date_next_hydrostatic_test"/>
-                            <field name="last_hydrostatic_test_result"/>
+                            <field name="id_loading"/>
+                            <field name="owner_id"/>
+                            <field name="location"/>
+                            <field name="date_loading"/>
+                            <field name="date_reloading"/>
+                            <field name="cylinder_number"/>
+                            <field name="extinction_rating"/>
                         </tree>
                     </field>
                 </page>

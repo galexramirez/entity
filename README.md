@@ -1,6 +1,6 @@
-Invoicing Cyclical for Community in Odoo 17
+Entity for Community in Odoo 17
 ==============================================
-* Invoicing Cyclical for Odoo 17 community edition
+* Entity for Odoo 17 community edition
 
 Installation
 ============
