@@ -1,0 +1,1363 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* entity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240324\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 02:09+0000\n"
+"PO-Revision-Date: 2025-04-22 02:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__hydrostatic_test_pressure__35_kg_cm2
+msgid "38 Kg/cm2"
+msgstr "38 Kg/cm2"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__hydrostatic_test_pressure__55_kg_cm2
+msgid "55 Kg/cm2"
+msgstr "55 Kg/cm2"
+
+#. module: entity
+#: model:ir.model.constraint,message:entity.constraint_entity_category_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_cylinder_capacity_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_manufacturer_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_origin_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_percentage_load_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_type_agent_name_unique
+#: model:ir.model.constraint,message:entity.constraint_entity_type_name_unique
+msgid "A entity type name must be unique!"
+msgstr "El nombre del Tipo de Entidad debe ser único!"
+
+#. module: entity
+#: model:ir.model.constraint,message:entity.constraint_entity_hydrostatic_test_line_hydrostatic_test_unique
+msgid "A owner and date hydrostatic test must be unique!"
+msgstr "El propietario y la fecha de la prueba hidrostática deben ser únicos!"
+
+#. module: entity
+#: model:ir.model.constraint,message:entity.constraint_entity_operating_line_operating_unique
+msgid "A owner and date loading must be unique!"
+msgstr "El propietario y la fecha de carga deben ser únicos!"
+
+#. module: entity
+#: model:ir.model.constraint,message:entity.constraint_entity_tag_name_unique
+msgid "A property tag name must be unique!"
+msgstr "El nombre de la etiqueta debe se único"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__hydrostatic_test_result__approved
+msgid "APPROVED"
+msgstr "APROVADO"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "AREA TRATADA"
+msgstr "AREA TRATADA"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_res_partner__active_entity
+#: model:ir.model.fields,field_description:entity.field_res_users__active_entity
+msgid "Active Entity"
+msgstr "Activo en Entidad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de excepción de actividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__application_code
+msgid "Application Code"
+msgstr "Código de Aplicación
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_attachment_count
+msgid "Attachment Count"
+msgstr "Recuento de archivos adjuntos"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__business_activity
+msgid "Business Activity"
+msgstr "Giro"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "CERTIFICADO DE FUMIGACIÓN"
+msgstr "CERTIFICADO DE FUMIGACIÓN"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_operating_certificate__template_certificate__co_a4_model_1
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__co_a4_model_1
+msgid "CO A4-Model 1 - Various Companies"
+msgstr "CO A4-Modelo 1 - Empresas Varias"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_operating_certificate__template_certificate__co_a4_model_4
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__co_a4_model_4
+msgid "CO A4-Model 4 - Location"
+msgstr "CO A4-Modelo 4 - Ubicación"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_operating_certificate__template_certificate__co_a4_model_5
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__co_a4_model_5
+msgid "CO A4-Model 5 - Heritage Code"
+msgstr "CO A4-Modelo 5 - Código Patrimonial"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_operating_certificate__template_certificate__co_a5_model_2
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__co_a5_model_2
+msgid "CO A5-Model 2 - Transport - Rating"
+msgstr "CO A5-Modelo 2 - Transporte - Rating"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_operating_certificate__template_certificate__co_a5_model_3
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__co_a5_model_3
+msgid "CO A5-Model 3 - Various Companies"
+msgstr "CO A5-Modelo 3 - Empresas Varias"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_category
+#: model:ir.model.fields,field_description:entity.field_entity__category_id
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_category
+#: model_terms:ir.ui.view,arch_db:entity.entity_category_view_tree
+msgid "Category"
+msgstr "Categoría"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__name
+msgid "Certificate Hydrostatic Test Number"
+msgstr "Número del Certificado de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__template_certificate
+msgid "Certificate Template"
+msgstr "Plantilla de Certificado"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__type_certificate
+msgid "Certificate Type"
+msgstr "Tipo de Certificado"
+
+#. module: entity
+#: model:ir.actions.server,name:entity.close_limit_cron_ir_actions_server
+msgid "Check Close Limit"
+msgstr "Verificar Límite de Cierre"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_tag__color
+msgid "Color"
+msgstr "Color"
+
+#. module: entity
+#: model:ir.ui.menu,name:entity.entity_menu_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: entity
+#: model:ir.model,name:entity.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_category
+msgid "Create a new category !"
+msgstr "Crear una nueva categoría !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entities_customers
+msgid "Create a new customer !"
+msgstr "Crear un nuevo cliente !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_cylinder_capacity
+msgid "Create a new cylinder capacity !"
+msgstr "Crear una nueva capacidad de cilindro !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_template
+msgid "Create a new entity !"
+msgstr "Crear una nueva entidad !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entities_operating_certificate
+msgid "Create a new entity operating certificate !"
+msgstr "Crear un nuevo Certificado de Operatividad !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entities_sanitation_certificate
+msgid "Create a new entity sanitation certificate !"
+msgstr "Crear un nuevo Certificado de Saneamiento Ambiental !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_manufacturer
+msgid "Create a new manufacturer !"
+msgstr "Crear un nuevo Fabricante !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_model
+msgid "Create a new model !"
+msgstr "Crear un nuevo Modelo !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_origin
+msgid "Create a new origin !"
+msgstr "Crear una nueva Procedencia !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_percentage_load
+msgid "Create a new percentage load !"
+msgstr "Crear un nuevo Porcentage de Carga !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_tag
+msgid "Create a new tag !"
+msgstr "Crear una nueva Etiqueta !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_technical_standard
+msgid "Create a new technical standard !"
+msgstr "Crear una nueva Norma Técnica !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entities_technicians
+msgid "Create a new technician !"
+msgstr "Crear un nuevo Técnico !"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_type_agent
+msgid "Create a new type agent !"
+msgstr "Crear un nuevo Tipo de Agente"
+
+#. module: entity
+#: model_terms:ir.actions.act_window,help:entity.entity_action_entity_type
+msgid "Create a new type!"
+msgstr "Crear un nuevo Tipo de Entidad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_category__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_model__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_origin__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_tag__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_type__create_uid
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_category__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_model__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_origin__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_tag__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_type__create_date
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entities_customers
+#: model:ir.ui.menu,name:entity.entities_menu_entities_customers
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_cylinder_capacity
+#: model:ir.model.fields,field_description:entity.field_entity__entity_cylinder_capacity_id
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__entity_cylinder_capacity_ids
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_cylinder_capacity
+#: model_terms:ir.ui.view,arch_db:entity.entity_cylinder_capacity_view_tree
+#: model_terms:ir.ui.view,arch_db:entity.entity_percentage_load_view_tree
+msgid "Cylinder Capacity"
+msgstr "Capacidad del Cilindro"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__entity_cylinder_capacity_count
+msgid "Cylinder Capacity Count"
+msgstr "Contador de Capacidad del Cilindro"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__cylinder_number
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__cylinder_number
+msgid "Cylinder Number"
+msgstr "Número de Cilindro"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "DESINFECCIÓN"
+msgstr "DESINFECCIÓN"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "DESINSECTACIÓN"
+msgstr "DESINSECTACIÓN"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "DESRATIZACIÓN"
+msgstr "DESRATIZACIÓN"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__date_certificate
+msgid "Date Certificate"
+msgstr "Fecha del Certificado"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__date_hydrostatic_test
+msgid "Date Hydrostatic Test"
+msgstr "Fecha de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__date_loading
+msgid "Date Loading"
+msgstr "Fecha de Carga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__date_manufacture
+msgid "Date Manufacture"
+msgstr "Fecha de Fabricación"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__date_next_hydrostatic_test
+msgid "Date Next Hydrostatic Test"
+msgstr "Próxima Fecha de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__date_reloading
+msgid "Date Reloading"
+msgstr "Fecha de Recarga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__disinfection
+msgid "Disinfection"
+msgstr "Desinfección"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_category__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_model__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_origin__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_tag__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_type__display_name
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__end_date
+msgid "End Date"
+msgstr "Fecha de Finalización"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_template
+#: model:ir.ui.menu,name:entity.entities_menu_entity_template
+#: model:ir.ui.menu,name:entity.entity_menu_entities
+#: model_terms:ir.ui.view,arch_db:entity.entity_customer_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_cylinder_capacity_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_origin_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_percentage_load_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_technician_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_agent_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_view_form
+msgid "Entities"
+msgstr "Entidades"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entities_technicians
+msgid "Entities Technician"
+msgstr "Técnico"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__entity_id
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__entity_id
+#: model:ir.ui.menu,name:entity.entity_menu_root
+#: model_terms:ir.ui.view,arch_db:entity.entity_search
+msgid "Entity"
+msgstr "Entidad"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_category
+#: model_terms:ir.ui.view,arch_db:entity.entity_categiry_view_form
+msgid "Entity Category"
+msgstr "Categoría"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_cylinder_capacity
+#: model_terms:ir.ui.view,arch_db:entity.entity_cylinder_capacity_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_percentage_load_view_form
+msgid "Entity Cylinder Capacity"
+msgstr "Capacidad de Cilindro"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_hydrostatic_test_line
+msgid "Entity Hydrostatic Test Line"
+msgstr "Línea de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_manufacturer
+#: model_terms:ir.ui.view,arch_db:entity.entity_manufacturer_view_form
+msgid "Entity Manufacturer"
+msgstr "Fabricante"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_model
+#: model_terms:ir.ui.view,arch_db:entity.entity_model_view_form
+msgid "Entity Model"
+msgstr "Modelo"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "Entity Name"
+msgstr "Nombre de Entidad"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_operating_certificate
+#: model_terms:ir.ui.view,arch_db:entity.entity_operating_certificate_view_form
+msgid "Entity Operating Certificate"
+msgstr "Certificado de Operatividad"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_operating_line
+msgid "Entity Operating Line"
+msgstr "Línea de Operatividad"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_origin
+#: model:ir.model.fields,field_description:entity.field_entity_origin__entity_origin_ids
+#: model_terms:ir.ui.view,arch_db:entity.entity_origin_view_form
+msgid "Entity Origin"
+msgstr "Procedencia"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_origin__entity_origin_count
+msgid "Entity Origin Count"
+msgstr "Contador de Procedencia"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_percentage_load
+msgid "Entity Percentage Load"
+msgstr "Porcentage de Carga"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_sanitation_certificate
+#: model_terms:ir.ui.view,arch_db:entity.entity_sanitation_certificate_view_form
+msgid "Entity Sanitation Certificate"
+msgstr "Certificado de Saneamiento Ambiental"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_tag
+#: model_terms:ir.ui.view,arch_db:entity.entity_tag_view_tree
+msgid "Entity Tag"
+msgstr "Etiqueta"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_technical_standard
+#: model_terms:ir.ui.view,arch_db:entity.entity_technical_standard_view_form
+msgid "Entity Technical Standard"
+msgstr "Norma Técnica"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_type
+#: model:ir.model.fields,field_description:entity.field_entity_type__entity_type_ids
+msgid "Entity Type"
+msgstr "Tipo"
+
+#. module: entity
+#: model:ir.model,name:entity.model_entity_type_agent
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__entity_type_agent_count
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__entity_type_agent_ids
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_agent_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_agent_view_tree
+msgid "Entity Type Agent"
+msgstr "Tipo de Agente"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_type__entity_type_count
+msgid "Entity Type Count"
+msgstr "Contador de Tipo"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_view_form
+msgid "Entity Types"
+msgstr "Tipos"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__expiration_date
+msgid "Expiration Date"
+msgstr "Fecha de Vencimiento"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__extinction_rating
+msgid "Extinction Rating"
+msgstr "Rating de Extinción"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "FECHA DE SERVICIO"
+msgstr "FECHA DE SERVICIO"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "FECHA DE VENCIMIENTO"
+msgstr "FECHA DE VENCIMIENTO"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "Firma y sello del Ing. Sanitario<br/> Gerente General"
+msgstr "Firma y sello del Ing. Sanitario<br/> Gerente General"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Asociados)"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ícono de fuente de impresión, por ejemplo"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "GIRO"
+msgstr "GIRO"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "General Information"
+msgstr "Información General"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_search
+msgid "Group By"
+msgstr "Agrupado Por"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__test_pressure__high_pressure
+msgid "HIGH PRESSURE"
+msgstr "ALTA PRESION"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__template_certificate__ht_a4_model_1
+msgid "HT A4-Model 1 - Various Companies"
+msgstr "HT A4-Modelo 1 - Empresas Varias"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__type_certificate__hydrostatic_test
+msgid "HYDROSTATIC TEST"
+msgstr "PRUEBA HIDROSTATICA"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__has_message
+msgid "Has Message"
+msgstr "Tiene un mensaje"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__heritage_code
+msgid "Heritage Code"
+msgstr "Código Patrimonial"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "Hidrostatic Test"
+msgstr "Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__hydrostatic_test_description
+msgid "Hydrostatic Test Description"
+msgstr "Descripción de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__hydrostatic_test_lines_ids
+msgid "Hydrostatic Test Lines"
+msgstr "Línea de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__hydrostatic_test_pressure
+msgid "Hydrostatic Test Pressure"
+msgstr "Presión de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__hydrostatic_test_result
+msgid "Hydrostatic Test Result"
+msgstr "Resultado de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__id
+#: model:ir.model.fields,field_description:entity.field_entity_category__id
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__id
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__id
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__id
+#: model:ir.model.fields,field_description:entity.field_entity_model__id
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__id
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__id
+#: model:ir.model.fields,field_description:entity.field_entity_origin__id
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__id
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__id
+#: model:ir.model.fields,field_description:entity.field_entity_tag__id
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__id
+#: model:ir.model.fields,field_description:entity.field_entity_type__id
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__id
+msgid "ID"
+msgstr "ID"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__id_hydrostatic_test
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__id_loading
+msgid "ID."
+msgstr "ID"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "INTERNAL NOTES"
+msgstr "Notas Internas"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los mensajes nuevos requieren su atención."
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__message_has_error
+#: model:ir.model.fields,help:entity.field_entity__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tendrán un error de entrega."
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__image_entity
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__image_entity_manufacturer
+msgid "Image"
+msgstr "Imagen"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_search
+msgid "Inactive"
+msgstr "Inactivo"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__insect_control
+msgid "Insect Control"
+msgstr "Desinsectación"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_res_partner__is_technical
+#: model:ir.model.fields,field_description:entity.field_res_users__is_technical
+msgid "Is Technical"
+msgstr "Es Técnico"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "LIMPIEZA DE TANQUE SÉPTICO"
+msgstr "LIMPIEZA DE TANQUE SÉPTICO"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid ""
+"LIMPIEZA Y DESINFECCIÓN DE\n"
+"                            RESERVORIO DE AGUA"
+msgstr ""
+"LIMPIEZA Y DESINFECCIÓN DE\n"
+"                            RESERVORIO DE AGUA"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__test_pressure__low_pressure
+msgid "LOW PRESSURE"
+msgstr "BAJA PRESION"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid ""
+"Last\n"
+"                                            Hydrostatic Test Date:"
+msgstr ""
+"Ultimo\n"
+"                                            Fecha de Prueba Hidrostática:"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid ""
+"Last\n"
+"                                            Hydrostatic Test Id:"
+msgstr ""
+"Ultimo\n"
+"                                            Id de Prueba Hidrostática:"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_reload_cylinder_number
+msgid "Last Cylinder Number"
+msgstr "Ultimo Número de Cilindro"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_date_hydrostatic_test
+msgid "Last Date Hydrostatic Test"
+msgstr "Ultima Fecha de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_date_next_hydrostatic_test
+msgid "Last Date Next Hydrostatic Test"
+msgstr "Ultima Próxima Fecha de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_extinction_rating
+msgid "Last Extinction Rating"
+msgstr "Ultimo Rating de Extinción"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_hydrostatic_test_cylinder_number
+msgid "Last Hydrostatic Test Cylinder Number"
+msgstr "Ultimo Numero de Cilindro de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_hydrostatic_test_pressure
+msgid "Last Hydrostatic Test Pressure"
+msgstr "Ultima Presión de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_hydrostatic_test_result
+msgid "Last Hydrostatic Test Result"
+msgstr "Ultimo Resultado de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_id_hydrostatic_test
+msgid "Last Id Hydrostatic Test"
+msgstr "Ultimo Id de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_reload_location
+msgid "Last Location"
+msgstr "Ultima Ubicación"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_name_hydrostatic_test
+msgid "Last Name Hydrostatic Test"
+msgstr "Ultimo Certificado de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_name_operating
+msgid "Last Name Operating"
+msgstr "Ultimo Certificado de Operatividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_owner_id
+msgid "Last Owner"
+msgstr "Ultimo Propietario"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid ""
+"Last Reload\n"
+"                                            Date:"
+msgstr ""
+"Ultima Recarga\n"
+"                                            Fecha:"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_reload_date
+msgid "Last Reload Date"
+msgstr "Ultima Fecha de Recarga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_reload_id
+msgid "Last Reload Id"
+msgstr "Ultimo Id de Recarga"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid "Last Reload Id:"
+msgstr "Ultimo Id de Recarga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_remarks
+msgid "Last Remarks"
+msgstr "Ultima Observación"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_technician_id
+msgid "Last Technician"
+msgstr "Ultimo Técnico"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__last_test_pressure
+msgid "Last Test Pressure"
+msgstr "Ultima Presión de Prueba Hidrostática"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_category__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_model__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_origin__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_tag__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_type__write_uid
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actulización Por"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_category__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_model__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_origin__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_tag__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_type__write_date
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__write_date
+msgid "Last Updated on"
+msgstr "Ultima Actiualización el"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "Lima,"
+msgstr "Lima,"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__location
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__owner_type__main
+msgid "MAIN"
+msgstr "PRINCIPAL"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_manufacturer
+#: model:ir.model.fields,field_description:entity.field_entity__entity_manufacturer_id
+#: model:ir.model.fields,field_description:entity.field_entity_model__entity_manufacturer_id
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_manufacturer
+#: model_terms:ir.ui.view,arch_db:entity.entity_manufacturer_view_tree
+msgid "Manufacturer"
+msgstr "Fabricante"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__manufacturer_code
+msgid "Manufacturer Code"
+msgstr "Código de Fabricante"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega del mensaje"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_ids
+msgid "Messages"
+msgstr "Mensages"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_model
+#: model:ir.model.fields,field_description:entity.field_entity__entity_model_id
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__entity_model_count
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__entity_model_ids
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_model
+#: model_terms:ir.ui.view,arch_db:entity.entity_manufacturer_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_model_view_tree
+msgid "Model"
+msgstr "Modelo"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha límite de mi actividad"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__hydrostatic_test_result__not_approved
+msgid "NOT APPROVED"
+msgstr "NO APROVADO"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__name
+#: model:ir.model.fields,field_description:entity.field_entity_category__name
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__name
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__name
+#: model:ir.model.fields,field_description:entity.field_entity_model__name
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__name
+#: model:ir.model.fields,field_description:entity.field_entity_origin__name
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__name
+#: model:ir.model.fields,field_description:entity.field_entity_tag__name
+#: model:ir.model.fields,field_description:entity.field_entity_type__name
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid ""
+"Next\n"
+"                                            Hydrostatic Test Date:"
+msgstr ""
+"Siguiente\n"
+"                                            Fecha de Prueba Hidrostática:"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Próximo evento del calendario de actividades"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite para la próxima actividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la próxima actividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_kanban
+msgid ""
+"Next Reload\n"
+"                                            Date:"
+msgstr ""
+"Siguiente Recarga\n"
+"                                            Fecha:"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__next_reload_date
+msgid "Next Reload Date"
+msgstr "Próxima fecha de recarga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__note
+#: model:ir.model.fields,field_description:entity.field_entity_model__note
+#: model_terms:ir.ui.view,arch_db:entity.entity_model_view_form
+msgid "Note"
+msgstr "Notas"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Acciones"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de Errores"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_technical_standard__type_certificate__operating
+msgid "OPERATING"
+msgstr "OPERATIVIDAD"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entities_operating_certificate
+#: model:ir.ui.menu,name:entity.entities_menu_entities_operating_certificate
+#: model_terms:ir.ui.view,arch_db:entity.entity_operating_certificate_view_tree
+msgid "Operating Certificate"
+msgstr "Certificado de Operatividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__name
+msgid "Operating Certificate Number"
+msgstr "Número de Certificado de Operatividad"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__operating_lines_ids
+msgid "Operating Lines"
+msgstr "Líneas de Operación"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "Operationality"
+msgstr "Operacionalidad"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_origin
+#: model:ir.model.fields,field_description:entity.field_entity__entity_origin_id
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_origin
+#: model_terms:ir.ui.view,arch_db:entity.entity_origin_view_tree
+msgid "Origin"
+msgstr "Procedencia"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__owner_id
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__owner_id
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__owner_id
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__owner_id
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__owner_id
+#: model_terms:ir.ui.view,arch_db:entity.entity_search
+msgid "Owner"
+msgstr "Propietario"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_res_partner__owner_entity_ids
+#: model:ir.model.fields,field_description:entity.field_res_users__owner_entity_ids
+msgid "Owner Entities"
+msgstr "Propietario"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__owner_type
+msgid "Owner Type"
+msgstr "Tipo de Propietario"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_percentage_load
+#: model:ir.model.fields,field_description:entity.field_entity__entity_percentage_load_id
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__entity_percentage_load_ids
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_percentage_load
+msgid "Percentage Load"
+msgstr "Porcentaje de Carga"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__entity_percentage_load_count
+msgid "Percentage Load Count"
+msgstr "Contador de Procentaje de Carga"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid ""
+"Por el presente, certificamos que se han realizado los servicios de\n"
+"                            saneamiento ambiental correspondiente a:"
+msgstr ""
+"Por el presente, certificamos que se han realizado los servicios de\n"
+"                            saneamiento ambiental correspondiente a:"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_operating_certificate_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_sanitation_certificate_view_form
+msgid "Previewing"
+msgstr "Vista Previa"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_operating_certificate_view_tree
+#: model_terms:ir.ui.view,arch_db:entity.entity_sanitation_certificate_view_tree
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__rat_extermination
+msgid "Rat Extermination"
+msgstr "Desratización"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__reference_document
+msgid "Reference Document"
+msgstr "Documento de Referencia"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__remarks
+msgid "Remarks"
+msgstr "Observaciones"
+
+#. module: entity
+#: model:ir.actions.report,name:entity.action_print_sanitation_certificate_pdf
+msgid "Report Sanitation Certificate"
+msgstr "Informe Certificado de Saneamiento Ambiental"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entities_sanitation_certificate
+#: model:ir.ui.menu,name:entity.entities_menu_entities_sanitation_certificate
+#: model_terms:ir.ui.view,arch_db:entity.entity_sanitation_certificate_view_form
+#: model_terms:ir.ui.view,arch_db:entity.entity_sanitation_certificate_view_tree
+msgid "Sanitation Certificate"
+msgstr "Certificado de Saneamiento Ambiental"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__name
+msgid "Sanitation Certificate Number"
+msgstr "Número de Certificado de Saneamiento Ambiental"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__septic_tank_cleaning
+msgid "Septic Tank Cleaning"
+msgstr "Limpieza de Tanque Séptico"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_category__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_cylinder_capacity__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_manufacturer__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_origin__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_percentage_load__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_type__sequence
+#: model:ir.model.fields,field_description:entity.field_entity_type_agent__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__serial_number
+msgid "Serial Number"
+msgstr "Número de Serie"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__service_start_date
+msgid "Service Start Date"
+msgstr "Fecha de Inicio del Servicio"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__stamping_code
+msgid "Stamping Code"
+msgstr "Código de Estampado"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__start_date
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencido: La fecha de vencimiento ya pasó\n"
+"Hoy: La fecha de la actividad es hoy\n"
+"Planificado: Actividades futuras"
+
+#. module: entity
+#: model:ir.model.fields.selection,name:entity.selection__entity_hydrostatic_test_line__owner_type__third
+msgid "THIRD"
+msgstr "Tercero"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_tag
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_tag
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__tag_ids
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_technical_standard
+#: model:ir.model.fields,field_description:entity.field_entity_technical_standard__technical_standard
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_techincal_standard
+#: model_terms:ir.ui.view,arch_db:entity.entity_technical_standard_view_tree
+msgid "Technical Standard"
+msgstr "Norma Técnica"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_line__technician_id
+msgid "Technician"
+msgstr "Técnico"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_res_partner__technician_entity_ids
+#: model:ir.model.fields,field_description:entity.field_res_users__technician_entity_ids
+msgid "Technician Entities"
+msgstr "Técnico"
+
+#. module: entity
+#: model:ir.ui.menu,name:entity.entities_menu_entities_technicians
+msgid "Technicians"
+msgstr "Técnicos"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_operating_certificate__template_certificate
+msgid "Template Certificate"
+msgstr "Plantilla de Certificado"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_hydrostatic_test_line__test_pressure
+msgid "Test Pressure"
+msgstr "Presión de Prueba"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__treated_area
+msgid "Treated Area"
+msgstr "Area Tratada"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__entity_type_id
+msgid "Type"
+msgstr "Tipo"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__entity_type_agent_id
+msgid "Type Agent"
+msgstr "Tipo de Agente"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción registrada"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_type
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_type
+#: model_terms:ir.ui.view,arch_db:entity.entity_type_view_tree
+msgid "Types"
+msgstr "Tipos"
+
+#. module: entity
+#: model:ir.actions.act_window,name:entity.entity_action_entity_type_agent
+#: model:ir.ui.menu,name:entity.entity_configuration_menu_entity_type_agent
+msgid "Types Agent"
+msgstr "Tipos de Agente"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "UBICADO"
+msgstr "UBICADO"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__unique_code
+msgid "Unique Code"
+msgstr "Código Unico"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity_category__sequence
+#: model:ir.model.fields,help:entity.field_entity_cylinder_capacity__sequence
+#: model:ir.model.fields,help:entity.field_entity_manufacturer__sequence
+#: model:ir.model.fields,help:entity.field_entity_origin__sequence
+#: model:ir.model.fields,help:entity.field_entity_percentage_load__sequence
+#: model:ir.model.fields,help:entity.field_entity_type__sequence
+#: model:ir.model.fields,help:entity.field_entity_type_agent__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "Se utiliza para ordenar. Cuanto más bajo, mejor."
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity_sanitation_certificate__water_reservoir_cleaning_desinfection
+msgid "Water Reservoir Cleaning and Desinfection"
+msgstr "Limpieza y Desinfección de Reservorio de Agua"
+
+#. module: entity
+#: model:ir.model.fields,field_description:entity.field_entity__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: entity
+#: model:ir.model.fields,help:entity.field_entity__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_form
+msgid "Write here any other information related to this entity"
+msgstr "Escriba aquí cualquier otra información relacionada con esta entidad"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.entity_model_view_form
+msgid "Write here any other information related to this entity model"
+msgstr "Escriba aquí cualquier otra información relacionada con este modelo"
+
+#. module: entity
+#: model_terms:ir.ui.view,arch_db:entity.report_sanitation_certificate_pdf
+msgid "m²"
+msgstr "m²"

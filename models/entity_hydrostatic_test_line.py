@@ -8,13 +8,13 @@ from odoo.exceptions import UserError, ValidationError
 from odoo.tools.float_utils import float_compare, float_is_zero, float_round
 
 ENTITY_PH_RESULT = [
-    ("aprobado", "APROBADO"),
-    ("no_aprobado", "NO APROBADO")
+    ("approved", "APPROVED"),
+    ("not_approved", "NOT APPROVED")
 ]
 
 ENTITY_TEST_PRESSURE = [
-    ("alta_presion", "ALTA PRESION"),
-    ("baja_presion", "BAJA PRESION")
+    ("high_pressure", "HIGH PRESSURE"),
+    ("low_pressure", "LOW PRESSURE")
 ]
 
 ENTITY_PH_PRESSURE = [
@@ -23,8 +23,8 @@ ENTITY_PH_PRESSURE = [
 ]
 
 ENTITY_OWNER_TYPE = [
-    ("principal", "PRINCIPAL"),
-    ("tercero", "TERCERO")
+    ("main", "MAIN"),
+    ("third", "THIRD")
 ]
 
 class EntityHydrostaticTestLine(models.Model):
@@ -42,10 +42,10 @@ class EntityHydrostaticTestLine(models.Model):
     owner_type = fields.Selection(string='Owner Type', selection=ENTITY_OWNER_TYPE, copy=False, required=True)
     date_hydrostatic_test = fields.Date(string='Date Hydrostatic Test', required=True, default=fields.Date.today)
     date_next_hydrostatic_test = fields.Date(string='Date Next Hydrostatic Test', default=datetime.today() + relativedelta(years=5))
-    hydrostatic_test_result = fields.Selection(string='Hydrostatic Test Result', selection=ENTITY_PH_RESULT, copy=False, default='aprobado')
-    test_pressure = fields.Selection(string='Test Pressure', selection=ENTITY_TEST_PRESSURE, copy=False, default='alta_presion')
+    hydrostatic_test_result = fields.Selection(string='Hydrostatic Test Result', selection=ENTITY_PH_RESULT, copy=False, default='approved')
+    test_pressure = fields.Selection(string='Test Pressure', selection=ENTITY_TEST_PRESSURE, copy=False, default='high_pressure')
     hydrostatic_test_pressure = fields.Selection(string='Hydrostatic Test Pressure', selection=ENTITY_PH_PRESSURE, copy=False)
-    remarks = fields.Char(string='Remarks', required=True, default="El resultado de la prueba es válida por (05) años")
+    remarks = fields.Char(string='Remarks', required=True, default="The test result is valid for (05) years")
     cylinder_number = fields.Char(string='Cylinder Number')
 
     _sql_constraints = [
@@ -66,11 +66,11 @@ class EntityHydrostaticTestLine(models.Model):
     @api.onchange("hydrostatic_test_result")
     def _onchange_hydrostatic_test_result(self):
         for record in self:
-            if record.hydrostatic_test_result=='aprobado':
-                record.remarks = "El resultado de la prueba es válida por (05) años"
+            if record.hydrostatic_test_result=='approved':
+                record.remarks = "The test result is valid for (05) years"
                 record.date_next_hydrostatic_test = record.date_hydrostatic_test + relativedelta(years=5)
             else:
-                record.remarks = "Equipo es dado de baja"
+                record.remarks = "Equipment is decommissioned"
                 record.date_next_hydrostatic_test = False
     
     @api.onchange("date_hydrostatic_test")

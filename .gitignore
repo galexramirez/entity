@@ -3,4 +3,4 @@
 /.idea
 /.vscode
 /.v
-models/__pycache__
+/models/__pycache__

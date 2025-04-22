@@ -3,7 +3,7 @@
 
     <record id="entity_action_entities_sanitation_certificate"
         model="ir.actions.act_window">
-        <field name="name">sanitation Certificate</field>
+        <field name="name">Sanitation Certificate</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">entity.sanitation.certificate</field>
         <field name="view_mode">tree,form</field>
@@ -30,7 +30,7 @@
                 <field name="expiration_date" readonly="1" />
                 <field name="business_activity" readonly="1" />
                 <field name="treated_area" readonly="1" />
-                <button name="action_print_report_sanitation_certificate"
+                <button name="action_button_print_sanitation_certificate"
                     string="Print"
                     type="object"
                     class="btn-primary"
