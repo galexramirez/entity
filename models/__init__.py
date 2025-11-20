@@ -36,3 +36,4 @@ from . import entity_technical_standard
 from . import entity_operating_certificate
 from . import res_partner
 from . import entity_sanitation_certificate
+from . import report_sanitation_certificate

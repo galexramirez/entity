@@ -1,164 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- <template id="report_sanitation_certificate_pdf">
-        <t t-call="web.html_container">
-            <t t-call="web.external_layout">
-                
-                <div class="header" style="background-color: #f0f0f0; padding: 10px; text-align: center;">
-                    <img t-att-src="'/entity/static/src/img/logo_gafumex.png'" style="width: 150px; height: auto;"/>
-                    <h1 style="color: #007bff;">CERTIFICADO</h1>
-                    <h3 style="color: #007bff;">SANEAMIENTO AMBIENTAL</h3>
-                </div>
-                <div class="body" style="margin: 20px;">
-                    <p>Por la presente, certificamos que se han realizado los servicios de saneamiento ambiental
-    correspondiente a:</p>
-
-                    <table style="width: 100%; border-collapse: collapse;">
-                        <thead>
-                            <tr style="background-color: #007bff; color: white;">
-                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 1</th>
-                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 2</th>
-                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 3</th>
-                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 4</th>
-                                <th style="padding: 10px; border: 1px solid #ddd;">Campo 5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr t-foreach="docs" t-as="doc">
-                                <td style="padding: 10px; border: 1px solid #ddd;">
-                                    <span t-field="doc.campo1"/>
-                                </td>
-                                <td style="padding: 10px; border: 1px solid #ddd;">
-                                    <span t-field="doc.campo2"/>
-                                </td>
-                                <td style="padding: 10px; border: 1px solid #ddd;">
-                                    <span t-field="doc.campo3"/>
-                                </td>
-                                <td style="padding: 10px; border: 1px solid #ddd;">
-                                    <span t-field="doc.campo4"/>
-                                </td>
-                                <td style="padding: 10px; border: 1px solid #ddd;">
-                                    <span t-field="doc.campo5"/>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div style="margin-top: 20px;">
-                        <h3>Observación:</h3>
-                        <p t-field="doc.observacion"/>
-                    </div>
-
-                    <div style="margin-top: 20px; text-align: right;">
-                        <h3>Firma:</h3>
-                        <img t-att-src="'data:image/png;base64,' + doc.firma" style="width: 150px; height: auto;"/>
-                    </div>
-                </div>
-            </t>
-        </t>
-    </template> -->
-
     <template id="report_sanitation_certificate_pdf">
         <t t-call="web.html_container">
-            <t t-call="web.external_layout">
-                <div class="page" style="font-family: Arial, sans-serif; padding: 2cm;">
-                    <!-- Encabezado con logo y número de certificado -->
-                    <div style="text-align: center; margin-bottom: 30px;">
-                        <!-- <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
-                            style="max-height: 100px;" /> -->
-                        <img t-att-src="'/entity/static/src/img/logo_gafumex.png'" style="max-height: 100px;"/>
-                        <h1 style="color: #2a5caa; margin-bottom: 5px;">CERTIFICADO DE FUMIGACIÓN</h1>
-                        <!-- <h3 style="color: #2a5caa; margin-top: 0;">N° <span t-field="data.name" /></h3> -->
-                    </div>
+            <t t-foreach="docs" t-as="doc">
+                <div class="page" style="font-family: Arial, sans-serif; padding: 1cm 2cm; position: relative; min-height: 297mm;">
+                    
+                    <!-- Encabezado con barra de colores -->
+                    <div style="position: relative; margin-bottom: 50px;">
+                        <!-- Barra de colores lateral izquierda solo en encabezado -->
+                        <div style="position: absolute; left: -2cm; top: 0; width: 12px; height: 120px; display: flex; flex-direction: column;">
+                            <div style="background-color: #FF0000; height: 25%; width: 100%;"></div>
+                            <div style="background-color: #00FF00; height: 25%; width: 100%;"></div>
+                            <div style="background-color: #00BFFF; height: 25%; width: 100%;"></div>
+                            <div style="background-color: #0000FF; height: 25%; width: 100%;"></div>
+                        </div>
 
-                    <!-- Texto introductorio -->
-                    <div style="text-align: justify; margin-bottom: 30px;">
-                        <p>Por el presente, certificamos que se han realizado los servicios de
-                            saneamiento ambiental correspondiente a:</p>
-                    </div>
-
-                    <!-- Servicios realizados -->
-                    <div style="margin-bottom: 30px; text-align: center;">
-                        <p t-if="data.disinfection" style="font-weight: bold; margin: 5px 0;">
-                            DESINFECCIÓN</p>
-                        <p t-if="data.rat_extermination" style="font-weight: bold; margin: 5px 0;">
-                            DESRATIZACIÓN</p>
-                        <p t-if="data.septic_tank_cleaning"
-                            style="font-weight: bold; margin: 5px 0;">LIMPIEZA DE TANQUE SÉPTICO</p>
-                        <p t-if="data.insect_control" style="font-weight: bold; margin: 5px 0;">
-                            DESINSECTACIÓN</p>
-                        <p t-if="data.water_reservoir_cleaning_desinfection"
-                            style="font-weight: bold; margin: 5px 0;">LIMPIEZA Y DESINFECCIÓN DE
-                            RESERVORIO DE AGUA</p>
-                    </div>
-
-                    <!-- Datos del cliente -->
-                    <div style="margin-bottom: 30px;">
                         <table style="width: 100%; border-collapse: collapse;">
                             <tr>
-                                <td style="width: 20%; font-weight: bold;">A</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.owner_id.name" />
+                                <td style="width: 150px; vertical-align: middle; text-align: left;">
+                                    <img t-att-src="'/entity/static/src/img/logo_gafumex.png'" style="max-height: 100px;"/>
+                                <!--    <img t-att-src="'data:image/png;base64,' + to_text(company.logo)" 
+                                         t-if="company.logo"
+                                         style="max-height: 100px; max-width: 140px;"/>
+                                    <img t-else="" 
+                                         src="/entity/static/src/img/logo_gafumex.png" 
+                                         style="max-height: 100px; max-width: 140px;"/> -->
                                 </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 20%; font-weight: bold;">UBICADO</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.owner_id.street" /> - <span
-                                        t-field="data.owner_id.city" />
+                                <td style="vertical-align: middle; text-align: center; padding: 0 20px;">
+                                    <h1 style="font-size: 48px; font-weight: bold; margin: 0; padding: 0; letter-spacing: 2px;">
+                                        CERTIFICADO
+                                    </h1>
+                                    <h2 style="font-size: 22px; font-weight: bold; margin: 5px 0 0 0; color: #4CAF50;">
+                                        SANEAMIENTO AMBIENTAL
+                                    </h2>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 20%; font-weight: bold;">GIRO</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.business_activity" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 20%; font-weight: bold;">AREA TRATADA</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.treated_area" /> m² </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 20%; font-weight: bold;">FECHA DE SERVICIO</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.service_start_date"
-                                        t-options="{'widget': 'date'}" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 20%; font-weight: bold;">FECHA DE VENCIMIENTO</td>
-                                <td style="width: 80%; border-bottom: 1px solid #000;">
-                                    <span t-field="data.expiration_date"
-                                        t-options="{'widget': 'date'}" />
+                                <td style="width: 180px; vertical-align: middle; text-align: right;">
+                                    <p style="font-size: 16px; font-weight: bold; color: #FF0000; margin: 0;">
+                                        Nro. <span t-esc="doc.name"/>
+                                    </p>
                                 </td>
                             </tr>
                         </table>
                     </div>
 
-                    <!-- Fecha y firma -->
-                    <div style="margin-top: 50px; text-align: right;">
-                        <p>Lima, <span t-field="data.service_start_date" t-options="{'widget': 'date'}" /></p>
-                        <div style="margin-top: 50px;">
-                            <p
-                                style="border-top: 1px solid #000; width: 300px; text-align: center; padding-top: 5px;">
-                                Firma y sello del Ing. Sanitario<br /> Gerente General </p>
-                        </div>
+                    <!-- Texto introductorio -->
+                    <div style="margin-bottom: 30px;">
+                        <p style="font-size: 13px; text-align: justify; line-height: 1.5; margin: 0;">
+                            Por el presente, certificamos que se han realizado los servicios de saneamiento ambiental correspondiente a:
+                        </p>
                     </div>
+
+                    <!-- Checkboxes de servicios -->
+                    <div style="margin-bottom: 30px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr>
+                                <td style="width: 33%; padding: 5px 10px 5px 0;">
+                                    <t t-if="doc.disinfection">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; background-color: #000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <span style="font-weight: bold; font-size: 12px;">DESINFECCION</span>
+                                </td>
+                                <td style="width: 33%; padding: 5px 10px;">
+                                    <t t-if="doc.rat_extermination">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; background-color: #000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <span style="font-weight: bold; font-size: 12px;">DESRATIZACION</span>
+                                </td>
+                                <td style="width: 34%; padding: 5px 0 5px 10px;">
+                                    <t t-if="doc.septic_tank_cleaning">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; background-color: #000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <span style="font-weight: bold; font-size: 12px;">LIMPIEZA DE TANQUE SEPTICO</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33%; padding: 5px 10px 5px 0;">
+                                    <t t-if="doc.insect_control">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; background-color: #000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <span style="font-weight: bold; font-size: 12px;">DESINSECTACION</span>
+                                </td>
+                                <td colspan="2" style="padding: 5px 0 5px 10px;">
+                                    <t t-if="doc.water_reservoir_cleaning_desinfection">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; background-color: #000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="display: inline-block; width: 18px; height: 18px; border: 2px solid #000; vertical-align: middle; margin-right: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;"></span>
+                                    </t>
+                                    <span style="font-weight: bold; font-size: 12px;">LIMPIEZA Y DESINFECCION DE RESERVORIO DE AGUA</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Datos del cliente en campos con bordes -->
+                    <div style="margin-bottom: 30px;">
+                        <!-- Campo A -->
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 15px;">
+                            <tr>
+                                <td style="width: 15%; font-weight: bold; font-size: 13px; vertical-align: middle; padding-right: 10px;">
+                                    A
+                                </td>
+                                <td style="width: 85%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.owner_id.name"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Campo UBICADO -->
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 15px;">
+                            <tr>
+                                <td style="width: 15%; font-weight: bold; font-size: 13px; vertical-align: middle; padding-right: 10px;">
+                                    UBICADO
+                                </td>
+                                <td style="width: 85%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.owner_id.street"/>
+                                    <span t-if="doc.owner_id.city">, <span t-field="doc.owner_id.city"/></span>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Campo GIRO -->
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 15px;">
+                            <tr>
+                                <td style="width: 15%; font-weight: bold; font-size: 13px; vertical-align: middle; padding-right: 10px;">
+                                    GIRO
+                                </td>
+                                <td style="width: 85%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.business_activity"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Campo AREA TRATADA -->
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 15px;">
+                            <tr>
+                                <td style="width: 15%; font-weight: bold; font-size: 13px; vertical-align: middle; padding-right: 10px;">
+                                    AREA TRATADA
+                                </td>
+                                <td style="width: 85%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.treated_area"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Campos de fechas lado a lado -->
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 10px 0;">
+                            <tr>
+                                <td style="width: 22%; font-weight: bold; font-size: 13px; vertical-align: middle; padding-right: 10px;">
+                                    FECHA DE SERVICIO
+                                </td>
+                                <td style="width: 28%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.service_start_date" t-options="{'widget': 'date', 'format': 'MMMM yyyy'}"/>
+                                </td>
+                                <td style="width: 22%; font-weight: bold; font-size: 13px; vertical-align: middle; padding: 0 10px; text-align: right;">
+                                    FECHA DE VENCIMIENTO
+                                </td>
+                                <td style="width: 28%; border: 2px solid #000; padding: 8px 15px; font-size: 13px; border-radius: 10px;">
+                                    <span t-field="doc.expiration_date" t-options="{'widget': 'date', 'format': 'MMMM yyyy'}"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Fecha de emisión -->
+                    <div style="text-align: right; margin-top: 40px;">
+                        <p style="font-size: 13px; margin: 0;">
+                            Lima, <span t-field="doc.service_start_date" t-options="{'widget': 'date', 'format': 'dd \'de\' MMMM \'de\' yyyy'}"/>
+                        </p>
+                    </div>
+
+                    <!-- Pie de página -->
+                    <div style="position: absolute; bottom: 1cm; left: 2cm; right: 2cm; border-top: 3px solid #FF0000; padding-top: 10px;">
+                        <!-- Línea azul debajo de la roja -->
+                        <div style="position: absolute; top: 13px; left: 0; right: 0; height: 3px; background-color: #0066CC;"></div>
+                        
+                        <table style="width: 100%; margin-top: 15px; font-size: 10px;">
+                            <tr>
+                                <td style="width: 33%; text-align: left; vertical-align: middle;">
+                                    <div style="margin-bottom: 3px;">
+                                        <strong>Gerente General</strong>
+                                    </div>
+                                    <div style="margin-bottom: 3px;">
+                                        <span style="margin-right: 5px;">&#128222;</span> (01) 543-0474
+                                    </div>
+                                    <div>
+                                        <span style="margin-right: 5px;">&#128241;</span> 947-030-291
+                                    </div>
+                                </td>
+                                <td style="width: 34%; text-align: center; vertical-align: middle;">
+                                    <div>
+                                        <span style="margin-right: 5px;">&#128205;</span> Av. Tupac Amaru 7901 Alto Nueve - Comas
+                                    </div>
+                                </td>
+                                <td style="width: 33%; text-align: right; vertical-align: middle;">
+                                    <div style="margin-bottom: 5px;">
+                                        <strong>Firma y sello del Ing. Sanitario</strong>
+                                    </div>
+                                    <div style="margin-bottom: 3px;">
+                                        www.grupogafumex.com
+                                    </div>
+                                    <div>
+                                        <img src="/entity/static/src/img/sgs_logo.png" 
+                                             style="height: 30px; vertical-align: middle;"
+                                             alt="SGS"/>
+                                        <span style="font-size: 8px; margin-left: 5px;">FIRMA ISO/IEC<br/>17020:2012</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
             </t>
         </t>
     </template>
 
     <record id="action_print_sanitation_certificate_pdf" model="ir.actions.report">
-        <field name="name">Report Sanitation Certificate</field>
+        <field name="name">Certificado de Saneamiento Ambiental</field>
         <field name="model">entity.sanitation.certificate</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">entity.report_sanitation_certificate_pdf</field>
-        <field name="binding_model_id" ref="model_entity_sanitation_certificate" />
+        <field name="report_file">entity.report_sanitation_certificate_pdf</field>
+        <field name="binding_model_id" ref="model_entity_sanitation_certificate"/>
         <field name="binding_type">report</field>
+        <field name="print_report_name">'Certificado_%s' % (object.name)</field>
+        <field name="paperformat_id" ref="base.paperformat_us"/>
     </record>
-
-    
-
 </odoo>
