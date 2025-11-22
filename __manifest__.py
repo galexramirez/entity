@@ -36,6 +36,7 @@
         'security/ir.model.access.csv',
         'data/cron.xml',
         'data/ir_sequence_data.xml',
+        'data/paperformat.xml',
         'report/entity_report_sanitation_certificate_view.xml',
         'views/entity_customer_views.xml',
         'views/entity_technician_views.xml',
